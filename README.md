@@ -80,6 +80,7 @@ Fireworks is in itself dependent only on standard C-libraries and platform-speci
 so it's ready for out-of-the-box deployment.
 
 ## Examples
+Build a random file path from 'C:' that is 10 characters long and prefixed with 'download':
 ```c
 int main(){
 	path_t file_path;
@@ -87,16 +88,80 @@ int main(){
 
 	memzero(file_path, sizeof file_path);
 
-	// Builds random file path from C: that is 10 characters long and prefixed with 'download'
 	path_build_random(file_path, &file_path_length, "C:", "download.", 10, ".zip");
-	printf("%s\n", file_path);	// >> C:\download.5iuo7OmqXq.zip
+	printf("%s\n", file_path);
 	path_rmvextension(file_path, &file_path_length, 1);
-	printf("%s\n", file_path);	// >> C:\download.GSn6hQTVLP
+	printf("%s\n", file_path);
 	path_append(file_path, &file_path_length, "HelloWorld.txt");
-	printf("%s\n", file_path);	// >> C:\download.GSn6hQTVLP\HelloWorld.txt	
+	printf("%s\n", file_path);
 }
 ```
+Output:
+```
+>> C:\download.5iuo7OmqXq.zip
+>> C:\download.GSn6hQTVLP
+>> C:\download.GSn6hQTVLP\HelloWorld.txt
+```
 
+Iterate sub-paths of path:
+```c
+int main(){
+	int    cursor;
+	path_t file_path;
+	bool   more;
+
+	memzero(file_path, sizeof file_path);
+
+	cursor = 0;
+
+	while (path_iterate("C:\\Windows\\System32\\Drivers", file_path, NULL, &cursor, &more)) {
+		printf("%s\n", file_path);
+
+		if (!more) break;
+	}
+}
+```
+Output:
+```
+>> C:\
+>> C:\Windows\
+>> C:\Windows\System32\
+>> C:\Windows\System32\Drivers
+```
+
+Play around with a string:
+```c
+int main(){
+	char_t str[13 + 1];
+	uint_t len;
+
+	memzero(str, sizeof str);
+
+	string_copy(str, "!dlroW olleH", &len);
+	printf("%s\n", str);
+
+	string_reverse(str);
+	printf("%s\n", str);
+
+	string_reduce_left(str, 6, &len);
+	printf("%s\n", str);
+
+	string_push(str, &len, "Thanks ", 0);
+	printf("%s\n", str);
+
+	string_reduce_right(str, 7, &len);
+	string_append(str, &len, "!!!");
+	printf("%s\n", str);
+}
+```
+Output:
+```
+>> !dlroW olleH
+>> Hello World!
+>> World!
+>> Thanks World!
+>> Thanks!!
+```
 ## Issues
 *Time.*
 <br/><br/>
