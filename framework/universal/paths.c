@@ -1,5 +1,5 @@
 /*
- * FileName: string.h
+ * FileName: paths.c
  *
  * Written by tutomiko <https://www.github.com/tutomiko>
  *
@@ -237,37 +237,35 @@ wstring_t path_append_w(__inout wstring_t s_dst_path, __inout_opt uint_t* _n_dst
 
 
 FWEXPORT
-string_t path_build(__inout string_t s_dst_path, __out_opt uint_t* _n_dst_path_length, __in_opt string_t const s_directory_path, __in_opt string_t const s_file_prefix, __in_opt string_t const s_file_name, __in_opt string_t const s_file_extension) {
+string_t path_build(__inout string_t s_dst_path, __out_opt uint_t* _n_dst_path_length, __in_opt string_t const s_directory_path, __in string_t const s_file_prefix, __in_opt string_t const s_file_name, __in_opt string_t const s_file_extension) {
 #pragma region <locals>
 	uint_t n_dst_path_length = 0;
 #pragma endregion
 
 	
 	assert(NULL != s_dst_path);
-	assert(NULL == s_file_extension || NULL != s_file_name);
+	assert(NULL != s_file_name);
 
 
 	if (NULL != s_directory_path) {
 		string_append(s_dst_path, &n_dst_path_length, s_directory_path);
 	}
 
-	if (NULL != s_file_name) {
-		if (n_dst_path_length > 0 && !path_isdirectory(s_dst_path, n_dst_path_length)) {
-			path_todirectory(s_dst_path, &n_dst_path_length);
-		}
+	if (n_dst_path_length > 0 && !path_isdirectory(s_dst_path, n_dst_path_length)) {
+		path_todirectory(s_dst_path, &n_dst_path_length);
+	}
 
-		if (NULL != s_file_prefix) {
-			string_append(s_dst_path, &n_dst_path_length, s_file_prefix);
-		}
+	if (NULL != s_file_prefix) {
+		string_append(s_dst_path, &n_dst_path_length, s_file_prefix);
+	}
 
-		string_append(s_dst_path, &n_dst_path_length, s_file_name);
+	string_append(s_dst_path, &n_dst_path_length, s_file_name);
 
-		if (NULL != s_file_extension) {
-			if (NULL != path_getextensionptr(s_dst_path, n_dst_path_length, 0, NULL))
-				path_setextension(s_dst_path, &n_dst_path_length, 0, s_file_extension, 0, NULL);
-			else {
-				path_addextension(s_dst_path, &n_dst_path_length, s_file_extension, 0, NULL);
-			}
+	if (NULL != s_file_extension) {
+		if (NULL != path_getextensionptr(s_file_name, 0, 0, NULL))
+			path_setextension(s_dst_path, &n_dst_path_length, 0, s_file_extension, 0, NULL);
+		else {
+			path_addextension(s_dst_path, &n_dst_path_length, s_file_extension, 0, NULL);
 		}
 	}
 
@@ -284,37 +282,35 @@ string_t path_build(__inout string_t s_dst_path, __out_opt uint_t* _n_dst_path_l
 
 
 FWEXPORT
-wstring_t path_build_w(__inout wstring_t s_dst_path, __out_opt uint_t* _n_dst_path_length, __in_opt wstring_t const s_directory_path, __in_opt wstring_t const s_file_prefix, __in_opt wstring_t const s_file_name, __in_opt wstring_t const s_file_extension) {
+wstring_t path_build_w(__inout wstring_t s_dst_path, __out_opt uint_t* _n_dst_path_length, __in_opt wstring_t const s_directory_path, __in_opt wstring_t const s_file_prefix, __in wstring_t const s_file_name, __in_opt wstring_t const s_file_extension) {
 #pragma region <locals>
 	uint_t n_dst_path_length = 0;
 #pragma endregion
 
 	
 	assert(NULL != s_dst_path);
-	assert(NULL == s_file_extension || NULL != s_file_name);
+	assert(NULL != s_file_name);
 
 
 	if (NULL != s_directory_path) {
 		wstring_append(s_dst_path, &n_dst_path_length, s_directory_path);
 	}
 
-	if (NULL != s_file_name) {
-		if (n_dst_path_length > 0 && !path_isdirectory_w(s_dst_path, n_dst_path_length)) {
-			path_todirectory_w(s_dst_path, &n_dst_path_length);
-		}
+	if (n_dst_path_length > 0 && !path_isdirectory_w(s_dst_path, n_dst_path_length)) {
+		path_todirectory_w(s_dst_path, &n_dst_path_length);
+	}
 
-		if (NULL != s_file_prefix) {
-			wstring_append(s_dst_path, &n_dst_path_length, s_file_prefix);
-		}
+	if (NULL != s_file_prefix) {
+		wstring_append(s_dst_path, &n_dst_path_length, s_file_prefix);
+	}
 
-		wstring_append(s_dst_path, &n_dst_path_length, s_file_name);
+	wstring_append(s_dst_path, &n_dst_path_length, s_file_name);
 
-		if (NULL != s_file_extension) {
-			if (NULL != path_getextensionptr_w(s_dst_path, n_dst_path_length, 0, NULL))
-				path_setextension_w(s_dst_path, &n_dst_path_length, 0, s_file_extension, 0, NULL);
-			else {
-				path_addextension_w(s_dst_path, &n_dst_path_length, s_file_extension, 0, NULL);
-			}
+	if (NULL != s_file_extension) {
+		if (NULL != path_getextensionptr_w(s_file_name, 0, 0, NULL)) 
+			path_setextension_w(s_dst_path, &n_dst_path_length, 0, s_file_extension, 0, NULL);
+		else {
+			path_addextension_w(s_dst_path, &n_dst_path_length, s_file_extension, 0, NULL);
 		}
 	}
 
