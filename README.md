@@ -82,13 +82,24 @@ so it's ready for out-of-the-box deployment.
 ## Examples
 ```c
 int main(){
+	path_t file_path;
+	uint_t file_path_length;
 
+	memzero(file_path, sizeof file_path);
+
+	// Builds random file path from C: that is 10 characters long and prefixed with 'download'
+	path_build_random(file_path, &file_path_length, "C:", "download.", 10, ".zip");
+	printf("%s\n", file_path);	// >> C:\download.5iuo7OmqXq.zip
+	path_rmvextension(file_path, &file_path_length, 1);
+	printf("%s\n", file_path);	// >> C:\download.GSn6hQTVLP
+	path_append(file_path, &file_path_length, "HelloWorld.txt");
+	printf("%s\n", file_path);	// >> C:\download.GSn6hQTVLP\HelloWorld.txt	
 }
 ```
 
 ## Issues
-Time.
-<br/>
+*Time.*
+<br/><br/>
 Time is the main issue. 
 The project is currently being maintained by just me, so the development is slow and any bug fixes or feature implementations may take a while. 
 
