@@ -98,7 +98,7 @@ int main(){
 	printf("%s\n", file_path);
 }
 ```
-Output:
+
 ```
 >> C:\download.5iuo7OmqXq.zip
 >> C:\download.GSn6hQTVLP
@@ -125,7 +125,7 @@ int main(){
 	}
 }
 ```
-Output:
+
 ```
 >> C:\
 >> C:\Windows\
@@ -160,7 +160,7 @@ int main(){
 	printf("%s\n", str);
 }
 ```
-Output:
+
 ```
 >> !dlroW olleH
 >> Hello World!
