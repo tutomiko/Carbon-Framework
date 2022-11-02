@@ -1,7 +1,6 @@
-# Fireworks-Framework
+<h1 align="center" font-size=100>Fireworks Framework</h1>
 
 <p align="center">
-  <a href="#goals">Goals</a> |
   <a href="#getting-started">Getting Started</a> |
   <a href="#dependencies">Dependencies</a> |
   <a href="#examples">Examples</a> |
