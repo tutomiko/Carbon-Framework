@@ -10,7 +10,7 @@
 </p>
 
 ## Overview
-Fireworks Framework is a general-purpose library intended to powerfully extend the C Standard 
+Fireworks Framework is a powerful general-purpose library intended to extend the C Standard 
 while abstracting the native, low-level function calls and platform-specific includes from developers.
 <br/>
 <br/>
