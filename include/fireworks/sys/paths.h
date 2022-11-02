@@ -1,5 +1,5 @@
 /*
- * FileName: string.h
+ * FileName: paths.h
  *
  * Written by tutomiko <https://www.github.com/tutomiko>
  *
@@ -139,7 +139,7 @@ string_t path_build(
 	__out_opt uint_t*        _n_dst_path_length, 
 	__in_opt  string_t const s_directory_path, 
 	__in_opt  string_t const s_file_prefix, 
-	__in_opt  string_t const s_file_name, 
+	__in      string_t const s_file_name, 
 	__in_opt  string_t const s_file_extension
 );
 
@@ -150,7 +150,7 @@ wstring_t path_build_w(
 	__out_opt uint_t*         _n_dst_path_length, 
 	__in_opt  wstring_t const s_directory_path, 
 	__in_opt  wstring_t const s_file_prefix, 
-	__in_opt  wstring_t const s_file_name, 
+	__in      wstring_t const s_file_name, 
 	__in_opt  wstring_t const s_file_extension
 );
 
