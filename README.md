@@ -61,7 +61,7 @@ To link the static library to your project:
 #pragma comment(lib, "Fireworks Framework-x86.lib")
 ```
 
-To include the primary header:
+To include the main header:
 ```c
 #include <fireworks.h>
 ```
