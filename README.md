@@ -93,10 +93,9 @@ Time is the main issue.
 The project is currently being maintained by just me, so the development is slow and any bug fixes or feature implementations may take a while. 
 
 ## Join
-All who wish to pitch in on development of the project are more than welcome!<p>
+All who wish to pitch in on development of the project are more than welcome!
 
 ## Donate
-Feel free to donate to support the development of the library<p>
-BTC: xxx<p>
-ETH: xxx<p>
-XMR: xxx<p>
+Feel free to donate to support the development of the library
+<br/>
+XMR: 8A2V2Kvr3qsYYmLBnJymXXRTjYt85FsudX7RBMyotwaLHWzaNqJQmHyUbAWqHEtLjAbpMstHinCnsa2HB8gT4zLY5GhRKoH
