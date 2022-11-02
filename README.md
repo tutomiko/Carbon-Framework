@@ -71,7 +71,7 @@ To include the main header:
 #include <fireworks.h>
 ```
 And you're done! 
-<br/>
+<br/><br/>
 For (your) safety, no pre-compiled library file is provided in the download package.
 
 ## Dependencies
