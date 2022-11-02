@@ -174,4 +174,4 @@ All who wish to pitch in on development of the project are more than welcome!
 ## Donate
 Consider donating to support the development of the library!
 <br/>
-XMR: 8A2V2Kvr3qsYYmLBnJymXXRTjYt85FsudX7RBMyotwaLHWzaNqJQmHyUbAWqHEtLjAbpMstHinCnsa2HB8gT4zLY5GhRKoH
+XMR: **8A2V2Kvr3qsYYmLBnJymXXRTjYt85FsudX7RBMyotwaLHWzaNqJQmHyUbAWqHEtLjAbpMstHinCnsa2HB8gT4zLY5GhRKoH**
