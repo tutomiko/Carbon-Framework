@@ -33,7 +33,7 @@ It provides functionalities such as:
 #include <fireworks/sys/event.h>
 #include <fireworks/sys/mutex.h>
 ```
- - Support for string manipulation of UTF-8 and UNICODE path string 
+ - Support for string manipulation of UTF-8 and UNICODE path strings
 ```c
 #include <fireworks/sys/paths.h>
 ```
