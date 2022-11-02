@@ -10,7 +10,9 @@
 </p>
 
 ## Overview
-Fireworks Framework is a general-purpose library intended to extend the C Standard.
+Fireworks Framework is a general-purpose library intended to powerfully extend the C Standard 
+while abstracting the native, low-level function calls and platform-specific includes from developers.
+<br/>
 <br/>
 It provides functionalities such as:
 <br/>
@@ -53,9 +55,12 @@ without additional dependencies.
 Currently only MS-Windows is supported, but the foundation for Android, iOS and Unix is laid.
 
 ## Getting Started
+Everything is packed into one: one library, one include.
+No need to deal with installing tools to install a tool. 
+It's simple:
+<br/>
 To add Fireworks to your project, simply download the project, open the Visual Studio solution file and build the static library. 
 <br/>
-
 To link the static library to your project:
 ```c
 #pragma comment(lib, "Fireworks Framework-x86.lib")
@@ -66,6 +71,8 @@ To include the main header:
 #include <fireworks.h>
 ```
 And you're done! 
+<br/>
+For (your) safety, no pre-compiled library file is provided in the download package.
 
 ## Dependencies
 As mentioned prior, 
