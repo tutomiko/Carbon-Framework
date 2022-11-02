@@ -65,6 +65,7 @@ To include the primary header:
 ```c
 #include <fireworks.h>
 ```
+And you're done! 
 
 ## Dependencies
 As mentioned prior, 
