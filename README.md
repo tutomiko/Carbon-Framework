@@ -82,6 +82,8 @@ so it's ready for out-of-the-box deployment.
 ## Examples
 Build a random file path from 'C:' that is 10 characters long and prefixed with 'download':
 ```c
+#include <fireworks.h>
+
 int main(){
 	path_t file_path;
 	uint_t file_path_length;
@@ -105,6 +107,8 @@ Output:
 
 Iterate sub-paths of path:
 ```c
+#include <fireworks.h>
+
 int main(){
 	int    cursor;
 	path_t file_path;
@@ -131,6 +135,8 @@ Output:
 
 Play around with a string:
 ```c
+#include <fireworks.h>
+
 int main(){
 	char_t str[13 + 1];
 	uint_t len;
@@ -161,6 +167,19 @@ Output:
 >> World!
 >> Thanks World!
 >> Thanks!!
+```
+
+Check if file exists and securely replace data with zeroes:
+```c
+#include <fireworks.h>
+
+int main(){
+	bool exists;
+
+	if (file_exists("passwords.txt", &exists) && exists) {
+		file_zero("passwords.txt");
+	}
+}
 ```
 ## Issues
 *Time.*
