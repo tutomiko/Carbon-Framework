@@ -4,7 +4,6 @@
   <a href="#getting-started">Getting Started</a> |
   <a href="#dependencies">Dependencies</a> |
   <a href="#examples">Examples</a> |
-  <a href="#issues">Issues</a> |
   <a href="#contribute">Contribute</a> |
   <a href="#donate">Donate</a>
 </p>
@@ -181,12 +180,6 @@ int main(){
 	}
 }
 ```
-## Issues
-*Time.*
-<br/><br/>
-Time is the main issue. 
-The project is currently being maintained by just me, so the development is slow and any bug fixes or feature implementations may take a while. 
-
 ## Contribute
 All who wish to pitch in on development of the project are more than welcome!
 
