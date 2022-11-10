@@ -1,4 +1,4 @@
-<h1 align="center" font-size=100>Fireworks Framework</h1>
+<h1 align="center" font-size=100>Carbon Framework</h1>
 
 <p align="center">
   <a href="#getting-started">Getting Started</a> |
@@ -10,7 +10,7 @@
 </p>
 
 ## Overview
-Fireworks Framework is a powerful general-purpose library intended to extend the C Standard 
+Carbon Framework is a powerful general-purpose library intended to extend the C Standard 
 while abstracting the native, low-level function calls and platform-specific includes from developers.
 <br/>
 <br/>
@@ -18,34 +18,34 @@ It provides functionalities such as:
 <br/>
  - Various internet utilities 
 ```c
-#include <fireworks/net/inet-utils.h>
+#include <carbon/net/inet-utils.h>
 ```
  - File & Directory management without requiring any platform-specific headers 
 ```c
-#include <fireworks/sys/files.h>
-#include <fireworks/sys/dirs.h>
+#include <carbon/sys/files.h>
+#include <carbon/sys/dirs.h>
 ```
  - High-level wrappers for threads and processes
 ```c
-#include <fireworks/sys/thread.h>
-#include <fireworks/sys/process.h>
+#include <carbon/sys/thread.h>
+#include <carbon/sys/process.h>
 ```
  - High-level wrappers for events and mutexes
 ```c
-#include <fireworks/sys/event.h>
-#include <fireworks/sys/mutex.h>
+#include <carbon/sys/event.h>
+#include <carbon/sys/mutex.h>
 ```
  - Support for string manipulation of UTF-8 and UNICODE path strings
 ```c
-#include <fireworks/sys/paths.h>
+#include <carbon/sys/paths.h>
 ```
  - Support for string manipulation of UTF-8 and UNICODE strings 
 ```c
-#include <fireworks/util/strings.h>
+#include <carbon/util/strings.h>
 ```
  - [Experimental] Sockets
 ```c
-#include <fireworks/net/sockets.h>
+#include <carbon/net/sockets.h>
 ```
  
 ## Goals
@@ -59,16 +59,16 @@ Everything is packed into one: one library, one include.
 No need to deal with installing tools to install a tool. 
 It's simple:
 <br/>
-To add Fireworks to your project, simply download the project, open the Visual Studio solution file and build the static library. 
+To add Carbon to your project, simply download the project, open the Visual Studio solution file and build the static library. 
 <br/>
 To link the static library to your project:
 ```c
-#pragma comment(lib, "Fireworks Framework-x86.lib")
+#pragma comment(lib, "Carbon Framework-x86.lib")
 ```
 
 To include the main header:
 ```c
-#include <fireworks.h>
+#include <carbon.h>
 ```
 And you're done! 
 <br/><br/>
@@ -76,13 +76,13 @@ For (your) safety, no pre-compiled library file is provided in the download pack
 
 ## Dependencies
 As mentioned prior, 
-Fireworks is in itself dependent only on standard C-libraries and platform-specific libraries (e.g. kernel32.dll on MS-Windows platforms) 
+Carbon is in itself dependent only on standard C-libraries and platform-specific libraries (e.g. kernel32.dll on MS-Windows platforms) 
 so it's ready for out-of-the-box deployment.
 
 ## Examples
 Build a random file path from 'C:' that is 10 characters long and prefixed with 'download':
 ```c
-#include <fireworks.h>
+#include <carbon.h>
 
 int main(){
 	path_t file_path;
@@ -107,7 +107,7 @@ int main(){
 
 Iterate sub-paths of path:
 ```c
-#include <fireworks.h>
+#include <carbon.h>
 
 int main(){
 	int    cursor;
@@ -135,7 +135,7 @@ int main(){
 
 Play around with a string:
 ```c
-#include <fireworks.h>
+#include <carbon.h>
 
 int main(){
 	char_t str[13 + 1];
@@ -171,7 +171,7 @@ int main(){
 
 Check if file exists and securely replace data with zeroes:
 ```c
-#include <fireworks.h>
+#include <carbon.h>
 
 int main(){
 	bool exists;
