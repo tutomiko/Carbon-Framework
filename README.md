@@ -1,10 +1,10 @@
 <h1 align="center" font-size=100>Carbon Framework</h1>
 
 <p align="center">
-  <a href="#goals">Goals</a> |
   <a href="#getting-started">Getting Started</a> |
   <a href="#dependencies">Dependencies</a> |
   <a href="#examples">Examples</a> |
+  <a href="#goals">Goals</a> |
   <a href="#contribute">Contribute</a> |
   <a href="#donate">Donate</a>
 </p>
@@ -48,12 +48,6 @@ It provides functionalities such as:
 #include <carbon/net/sockets.h>
 ```
  
-## Goals
-The goal for the project is to have a powerful cross-platform, pure-C library that allows for quick and efficient C development 
-without additional dependencies.
-<br/>
-Currently only MS-Windows is supported, but the foundation for Android, iOS and Unix is laid.
-
 ## Getting Started
 Everything is packed into one: one library, one include.
 No need to deal with installing tools to install a tool. 
@@ -181,6 +175,12 @@ int main(){
 	}
 }
 ```
+## Goals
+The goal for the project is to have a powerful cross-platform, pure-C library that allows for quick and efficient C development 
+without additional dependencies.
+<br/>
+Currently only MS-Windows is supported, but the foundation for Android, iOS and Unix is laid.
+
 ## Contribute
 All who wish to pitch in on development of the project are more than welcome!
 
