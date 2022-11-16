@@ -37,7 +37,7 @@ It provides functionalities such as:
 ```
  - Support for string manipulation of UTF-8 and UNICODE path strings
 ```c
-#include <carbon/sys/paths.h>
+#include <carbon/filesystem/paths.h>
 ```
  - Support for string manipulation of UTF-8 and UNICODE strings 
 ```c
