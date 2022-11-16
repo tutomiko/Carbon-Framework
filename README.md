@@ -32,8 +32,8 @@ It provides functionalities such as:
 ```
  - High-level wrappers for events and mutexes
 ```c
-#include <carbon/sys/event.h>
-#include <carbon/sys/mutex.h>
+#include <carbon/concurrency/event.h>
+#include <carbon/concurrency/mutex.h>
 ```
  - Support for string manipulation of UTF-8 and UNICODE path strings
 ```c
