@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\sys">
+      <UniqueIdentifier>{9dd2997b-cb8a-4b33-aff4-f2e73d2a8a39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sys">
+      <UniqueIdentifier>{04c9f634-e809-4f27-8c00-04d05f875086}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\filesystem">
+      <UniqueIdentifier>{846eacbc-1904-45f1-bba9-0695a3444b1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net">
+      <UniqueIdentifier>{dbb52bad-fde5-4552-9fd9-73e056287de7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\io">
+      <UniqueIdentifier>{9c174ea7-8415-421d-b924-143cd7e1b949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{6bd1af0c-c0da-49d7-b9ab-4c9aec2bd98c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\io">
+      <UniqueIdentifier>{33e6d1bd-9ba1-459a-9cd6-517ce6852626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{d5d06bd7-e161-40a9-9a23-769fdab2dac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\filesystem">
+      <UniqueIdentifier>{ce165171-27b5-496a-a863-9a4db46041e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\concurrency">
+      <UniqueIdentifier>{b320335f-0df2-4aeb-9daa-7d9c35f856b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\concurrency">
+      <UniqueIdentifier>{39b79e82-32fa-4ee4-8cd8-a5546f52326c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net">
+      <UniqueIdentifier>{3a19f073-110e-484c-b3a8-8a6a819df750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\type">
+      <UniqueIdentifier>{8be10432-1752-4449-b3ff-bc9b7fbc8e9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\type">
+      <UniqueIdentifier>{6d48c530-c785-48f1-b3a3-b0b00daa823f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_char.c">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\win32\cbc_concurrency.c">
+      <Filter>Source Files\concurrency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\win32\cbc_console.c">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\win32\cbc_dirs_nt.c">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\win32\cbc_entity.c">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_dirsx.c">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\win32\cbc_event.c">
+      <Filter>Source Files\concurrency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\win32\cbc_files_nt.c">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_filesx.c">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_inetcmp.c">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_inetcon.c">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_ipgen.c">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_memory.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\win32\cbc_mutex.c">
+      <Filter>Source Files\concurrency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_numconvert.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_paths.c">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\win32\cbc_process_nt.c">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\win32\cbc_platform.c">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_processthreadsx.c">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_processx.c">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\win32\cbc_socket.c">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_string.c">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_wstring.c">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_wchar.c">
+      <Filter>Source Files\type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\win32\cbc_user_nt.c">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\win32\cbc_thread.c">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\win32\cbc_sockets.c">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\win32\cbc_typecon.c">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\framework\universal\cbc_prandom.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\carbon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\cbcbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\net\entity.h">
+      <Filter>Header Files\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\net\inet.h">
+      <Filter>Header Files\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\net\inet-types.h">
+      <Filter>Header Files\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\net\inet-utils.h">
+      <Filter>Header Files\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\net\socket.h">
+      <Filter>Header Files\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\net\sockets.h">
+      <Filter>Header Files\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\io\io.h">
+      <Filter>Header Files\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\filesystem\dirs.h">
+      <Filter>Header Files\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\filesystem\files.h">
+      <Filter>Header Files\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\filesystem\filesystem.h">
+      <Filter>Header Files\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\filesystem\paths.h">
+      <Filter>Header Files\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\concurrency\concurrency.h">
+      <Filter>Header Files\concurrency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\concurrency\event.h">
+      <Filter>Header Files\concurrency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\concurrency\mutex.h">
+      <Filter>Header Files\concurrency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\concurrency\timeout.h">
+      <Filter>Header Files\concurrency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\bool.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\byte.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\bytearray.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\char.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\double.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\float.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\int.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\long.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\primitives.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\short.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\string.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\tchar.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\tstring.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\wchar.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\type\wstring.h">
+      <Filter>Header Files\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\util\charset.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\util\memory.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\util\numconvert.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\util\strings.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\sys\console.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\sys\platform.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\sys\process.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\sys\thread.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\sys\time.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\sys\user.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\carbon\util\prandom.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
