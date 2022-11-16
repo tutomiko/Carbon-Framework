@@ -22,8 +22,8 @@ It provides functionalities such as:
 ```
  - File & Directory management without requiring any platform-specific headers 
 ```c
-#include <carbon/sys/files.h>
-#include <carbon/sys/dirs.h>
+#include <carbon/filesystem/files.h>
+#include <carbon/filesystem/dirs.h>
 ```
  - High-level wrappers for threads and processes
 ```c
